@@ -1,0 +1,6 @@
+{
+  "name": "AarogyaCare Diagnostics & Lab Portal",
+  "description": "HIPAA & GDPR-compliant digital pathology lab app for doorstep blood sample collection booking, secure report downloads, real-time alerts, health parameter trends, and admin report management in Hindi & English.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', 'Noto Sans Devanagari', system-ui, -apple-system, sans-serif;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/* High Contrast Mode */
+.high-contrast {
+  --tw-border-opacity: 1;
+  filter: contrast(115%);
+}
+
+.high-contrast button, 
+.high-contrast input, 
+.high-contrast select {
+  border-width: 2px !important;
+}
+
+/* Print Stylesheet for Official Diagnostic Lab Reports */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #printable-lab-report, #printable-lab-report * {
+    visibility: visible;
+  }
+  #printable-lab-report {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    margin: 0;
+    padding: 1.5cm;
+    background: white !important;
+    color: black !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+}
